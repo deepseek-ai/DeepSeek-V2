@@ -165,7 +165,7 @@ We evaluate our model on LiveCodeBench (0901-0401), a benchmark designed for liv
 
 ## 4. Model Architecture
 DeepSeek-V2 adopts innovative architectures to guarantee economical training and efficient inference： 
-- For attention, we design IEAttn, which utilizes low-rank key-value union compression to eliminate the bottleneck of inference-time key-value cache, thus supporting efficient inference. 
+- For attention, we design MLA (Multi-head Latent Attention), which utilizes low-rank key-value union compression to eliminate the bottleneck of inference-time key-value cache, thus supporting efficient inference. 
 - For Feed-Forward Networks (FFNs), we adopt DeepSeekMoE architecture, a high-performance MoE architecture that enables training stronger models at lower costs. 
 
 <p align="center">
