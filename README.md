@@ -215,7 +215,7 @@ print(result)
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
 
-model_name = "deepseek-ai/DeepSeek-V2-Chat-RL"
+model_name = "deepseek-ai/DeepSeek-V2-Chat"
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 # `max_memory` should be set based on your devices
 max_memory = {i: "75GB" for i in range(8)}
