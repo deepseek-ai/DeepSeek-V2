@@ -232,7 +232,8 @@ outputs = model.generate(input_tensor.to(model.device), max_new_tokens=100)
 result = tokenizer.decode(outputs[0][input_tensor.shape[1]:], skip_special_tokens=True)
 print(result)
 ```
-The complete chat template can be founded within `tokenizer_config.json` located in the huggingface model repository/
+The complete chat template can be found within `tokenizer_config.json` located in the huggingface model repository.
+
 An example of chat template is as belows:
 ```bash
 <｜begin▁of▁sentence｜>User: {user_message_1}
