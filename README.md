@@ -79,7 +79,7 @@ We pretrained DeepSeek-V2 on a diverse and high-quality corpus comprising 8.1 tr
 | **Model** | **Context Length** | **Download** |
 | :------------: | :------------: | :------------: |
 | DeepSeek-V2   | 128k   | [🤗 HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-V2)   |
-| DeepSeek-V2-Chat(RL)   | 128k   | [🤗 HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat)   |
+| DeepSeek-V2-Chat (RL)   | 128k   | [🤗 HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat)   |
 
 </div>
 
@@ -91,7 +91,7 @@ Due to the constraints of HuggingFace, the open-source code currently experience
 
 <div align="center">
 
-| **Benchmark** | **Domain** | **LLaMA3 70B** | **Mixtral 8x22B** | **DeepSeek V1 (Dense-67B)** | **DeepSeek V2 (MoE-236B)** |
+| **Benchmark** | **Domain** | **LLaMA3 70B** | **Mixtral 8x22B** | **DeepSeek-V1 (Dense-67B)** | **DeepSeek-V2 (MoE-236B)** |
 |:-----------:|:--------:|:------------:|:---------------:|:-------------------------:|:------------------------:|
 | **MMLU** | English | 78.9 | 77.6 | 71.3 | 78.5 |
 | **BBH** | English | 81.0 | 78.9 | 68.7 | 78.9 |
@@ -116,7 +116,7 @@ Evaluation results on the ``Needle In A Haystack`` (NIAH) tests.  DeepSeek-V2 pe
 #### Standard Benchmark 
 <div align="center">
 
-| Benchmark | Domain         | QWen1.5 72B Chat | Mixtral 8x22B | LLaMA3 70B Instruct | DeepSeek V1 Chat (SFT) | DeepSeek V2 Chat(SFT) | DeepSeek V2 Chat(RL) |
+| Benchmark | Domain         | QWen1.5 72B Chat | Mixtral 8x22B | LLaMA3 70B Instruct | DeepSeek-V1 Chat (SFT) | DeepSeek-V2 Chat (SFT) | DeepSeek-V2 Chat (RL) |
 |:-----------:|:----------------:|:------------------:|:---------------:|:---------------------:|:-------------:|:-----------------------:|:----------------------:|
 | **MMLU**      | English        | 76.2             | 77.8          | 80.3                | 71.1        | 78.4                 | 77.8                 |
 | **BBH**       | English        | 65.9             | 78.4          | 80.1                | 71.7        | 81.3                 | 79.7                 |
@@ -143,15 +143,15 @@ We evaluate our model on AlpacaEval 2.0 and MTBench, showing the competitive per
 | **模型** | **开源/闭源** | **总分** | **中文推理** | **中文语言** |
 | :---: | :---: | :---: | :---: | :---: |
 | gpt-4-1106-preview | 闭源 | 8.01 | 7.73 | 8.29 |
-| DeepSeek-V2 Chat(RL) | 开源 | 7.91 | 7.45 | 8.36 |
-| erniebot-4.0-202404(文心一言) | 闭源 | 7.89 | 7.61 | 8.17 |
-| DeepSeek-V2 Chat(SFT) | 开源 | 7.74 | 7.30 | 8.17 |
+| DeepSeek-V2 Chat (RL) | 开源 | 7.91 | 7.45 | 8.36 |
+| erniebot-4.0-202404 (文心一言) | 闭源 | 7.89 | 7.61 | 8.17 |
+| DeepSeek-V2 Chat (SFT) | 开源 | 7.74 | 7.30 | 8.17 |
 | gpt-4-0613 | 闭源 | 7.53 | 7.47 | 7.59 |
-| erniebot-4.0-202312(文心一言) | 闭源 | 7.36 | 6.84 | 7.88 |
-| moonshot-v1-32k-202404(月之暗面) | 闭源 | 7.22 | 6.42 | 8.02 |
-| Qwen1.5-72B-Chat(通义千问) | 开源 | 7.19 | 6.45 | 7.93 |
+| erniebot-4.0-202312 (文心一言) | 闭源 | 7.36 | 6.84 | 7.88 |
+| moonshot-v1-32k-202404 (月之暗面) | 闭源 | 7.22 | 6.42 | 8.02 |
+| Qwen1.5-72B-Chat (通义千问) | 开源 | 7.19 | 6.45 | 7.93 |
 | DeepSeek-67B-Chat | 开源 | 6.43 | 5.75 | 7.11 |
-| Yi-34B-Chat(零一万物) | 开源 | 6.12 | 4.86 | 7.38 |
+| Yi-34B-Chat (零一万物) | 开源 | 6.12 | 4.86 | 7.38 |
 | gpt-3.5-turbo-0613 | 闭源 | 6.08 | 5.35 | 6.71 |
 
 </div>
