@@ -198,7 +198,7 @@ model_name = "deepseek-ai/DeepSeek-V2"
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 # `max_memory` should be set based on your devices
 max_memory = {i: "75GB" for i in range(8)}
-model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code=True, device_map="auto", torch_dtype=torch.bfloat16, max_memory=max_memory)
+model = AutoModelForCausalLM.from_pretrained(model_name, trust_remote_code=True, device_map="auto", torch_dtype=torch.bfloat16, max_memory=max_memory)
 model.generation_config = GenerationConfig.from_pretrained(model_name)
 model.generation_config.pad_token_id = model.generation_config.eos_token_id
 
@@ -219,7 +219,7 @@ model_name = "deepseek-ai/DeepSeek-V2-Chat"
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 # `max_memory` should be set based on your devices
 max_memory = {i: "75GB" for i in range(8)}
-model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code=True, device_map="auto", torch_dtype=torch.bfloat16, max_memory=max_memory)
+model = AutoModelForCausalLM.from_pretrained(model_name, trust_remote_code=True, device_map="auto", torch_dtype=torch.bfloat16, max_memory=max_memory)
 model.generation_config = GenerationConfig.from_pretrained(model_name)
 model.generation_config.pad_token_id = model.generation_config.eos_token_id
 
@@ -232,9 +232,11 @@ outputs = model.generate(input_tensor.to(model.device), max_new_tokens=100)
 result = tokenizer.decode(outputs[0][input_tensor.shape[1]:], skip_special_tokens=True)
 print(result)
 ```
+
 The complete chat template can be found within `tokenizer_config.json` located in the huggingface model repository.
 
 An example of chat template is as belows:
+
 ```bash
 <｜begin▁of▁sentence｜>User: {user_message_1}
 
@@ -242,7 +244,9 @@ Assistant: {assistant_message_1}<｜end▁of▁sentence｜>User: {user_message_2
 
 Assistant:
 ```
+
 You can also add an optional system message:
+
 ```bash
 <｜begin▁of▁sentence｜>{system_message}
 
