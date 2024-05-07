@@ -97,7 +97,7 @@ Due to the constraints of HuggingFace, the open-source code currently experience
 | **BBH** | English | 81.0 | 78.9 | 68.7 | 78.9 |
 | **C-Eval** | Chinese | 67.5 | 58.6 | 66.1 | 81.7 |
 | **CMMLU** | Chinese | 69.3 | 60.0 | 70.8 | 84.0 |
-| **HumanEval** | Code | 52.4 | 39.0 | 42.7 | 40.9 |
+| **HumanEval** | Code | 48.2	| 53.1 | 45.1 | 48.8 |
 | **MBPP** | Code | 68.6 | 64.2 | 57.4 | 66.6 |
 | **GSM8K** | Math | 83.0 | 80.3 | 63.4 | 79.2 |
 | **Math** | Math | 42.2 | 42.5 | 18.7 | 43.6 |
