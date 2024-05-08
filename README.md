@@ -55,7 +55,7 @@
 </p>
 
 <p align="center">
-  <a href="deepseek-v2-tech-report.pdf"><b>Paper Link</b>👁️</a>
+  <a href="https://arxiv.org/abs/2405.04434"><b>Paper Link</b>👁️</a>
 </p>
 
 # DeepSeek-V2:  A Strong, Economical, and Efficient Mixture-of-Experts Language Model
