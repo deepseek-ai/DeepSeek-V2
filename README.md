@@ -289,13 +289,14 @@ This code repository is licensed under [the MIT License](LICENSE-CODE). The use 
 
 ## 9. Citation
 ```
-@misc{deepseek-v2,
-  author = {DeepSeek-AI},
-  title  = {DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model},
-  year   = {2024},
-  note   = {GitHub repository},
-  url    = {https://github.com/deepseek-ai/deepseek-v2}
-  }
+@misc{deepseekv2,
+      title={DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model}, 
+      author={DeepSeek-AI},
+      year={2024},
+      eprint={2405.04434},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
 ## 10. Contact
