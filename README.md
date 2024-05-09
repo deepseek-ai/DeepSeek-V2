@@ -78,12 +78,12 @@ We pretrained DeepSeek-V2 on a diverse and high-quality corpus comprising 8.1 tr
 
 | **Model** | **Context Length** | **Download** |
 | :------------: | :------------: | :------------: |
-| DeepSeek-V2   | 128k   | [🤗 HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-V2)   |
-| DeepSeek-V2-Chat (RL)   | 128k   | [🤗 HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat)   |
+| DeepSeek-V2   | 128k   | [🤗 Hugging Face](https://huggingface.co/deepseek-ai/DeepSeek-V2)   |
+| DeepSeek-V2-Chat (RL)   | 128k   | [🤗 Hugging Face](https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat)   |
 
 </div>
 
-Due to the constraints of HuggingFace, the open-source code currently experiences slower performance than our internal codebase when running on GPUs with Huggingface. To facilitate the efficient execution of our model, we offer a dedicated vllm solution that optimizes performance for running our model effectively.
+Due to the constraints of Hugging Face, the open-source code currently experiences slower performance than our internal codebase when running on GPUs with Hugging Face. To facilitate the efficient execution of our model, we offer a dedicated vllm solution that optimizes performance for running our model effectively.
 
 ## 3. Evaluation Results
 ### Base Model
@@ -186,8 +186,8 @@ We also provide OpenAI-Compatible API at DeepSeek Platform: [platform.deepseek.c
 
 ## 7. How to run locally
 **To utilize DeepSeek-V2 in BF16 format for inference, 80GB*8 GPUs are required.**
-### Inference with Huggingface's Transformers
-You can directly employ [Huggingface's Transformers](https://github.com/huggingface/transformers) for model inference.
+### Inference with Hugging Face's Transformers
+You can directly employ [Hugging Face's Transformers](https://github.com/huggingface/transformers) for model inference.
 
 #### Text Completion
 ```python
@@ -235,7 +235,7 @@ result = tokenizer.decode(outputs[0][input_tensor.shape[1]:], skip_special_token
 print(result)
 ```
 
-The complete chat template can be found within `tokenizer_config.json` located in the huggingface model repository.
+The complete chat template can be found within `tokenizer_config.json` located in the Hugging Face model repository.
 
 An example of chat template is as belows:
 
