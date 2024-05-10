@@ -286,6 +286,19 @@ generated_text = [output.outputs[0].text for output in outputs]
 print(generated_text)
 ```
 
+### LangChain Support
+Since our API is compatible with OpenAI, you can easily use it in [langchain](https://www.langchain.com/).
+Here is an example:
+
+```
+from langchain_openai import ChatOpenAI
+llm = ChatOpenAI(
+    model='deepseek-chat',
+    openai_api_key=<your-deepseek-api-key>,
+    openai_api_base='https://api.deepseek.com/v1',
+    temperature=0.85,
+    max_tokens=8000)
+``` 
 ## 8. License
 This code repository is licensed under [the MIT License](LICENSE-CODE). The use of DeepSeek-V2 Base/Chat models is subject to [the Model License](LICENSE-MODEL). DeepSeek-V2 series (including Base and Chat) supports commercial use.
 
