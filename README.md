@@ -109,13 +109,13 @@ Due to the constraints of HuggingFace, the open-source code currently experience
 |:-------------:|:----------:|:--------------:|:-----------------:|:--------------------------:|
 | **Architecture**      | -    | MHA+Dense           | MHA+MoE              | MLA+MoE                       |
 | **MMLU**      | English    | 48.2           | 45.0              | 58.3                       |
-| **BBH**       | English    | xxxx           | xxxx              | 44.1                       |
+| **BBH**       | English    | 39.5           | 38.9              | 44.1                       |
 | **C-Eval**    | Chinese    | 45.0           | 40.6              | 60.3                       |
 | **CMMLU**     | Chinese    | 47.2           | 42.5              | 64.3                       |
 | **HumanEval** | Code       | 26.2           | 26.8              | 29.9                       |
 | **MBPP**      | Code       | 39.0           | 39.2              | 43.2                       |
 | **GSM8K**     | Math       | 17.4           | 18.8              | 41.1                       |
-| **Math**      | Math       | 3.3           | 4.3             | 17.1                       |
+| **Math**      | Math       | 3.3            | 4.3               | 17.1                       |
 
 </div>
 For more evaluation details, such as few-shot settings and prompts, please check our paper. 
@@ -139,7 +139,7 @@ Evaluation results on the ``Needle In A Haystack`` (NIAH) tests.  DeepSeek-V2 pe
 | **CMMLU**     | Chinese        | 82.9             | 61.0          | 70.7                | 67.8        | 82.4                 | 81.6                 |
 | **HumanEval** | Code           | 68.9             | 75.0          | 76.2                | 73.8        | 76.8                 | 81.1                 |
 | **MBPP**      | Code           | 52.2             | 64.4          | 69.8                | 61.4        | 70.4                 | 72.0                 |
-|   **LiveCodeBench  (0901-0401)**     | Code           | 18.8             | 25.0          | 30.5                | 18.3        | 28.7                 | 32.5                 |
+|   **LiveCodeBench  (0901-0401)**     | Code       | 18.8          | 25.0                | 30.5        | 18.3                 | 28.7                 | 32.5                 |
 | **GSM8K**     | Math           | 81.9             | 87.9          | 93.2                | 84.1        | 90.8                 | 92.2                 |
 | **Math**      | Math           | 40.6             | 49.8          | 48.5                | 32.6        | 52.7                 | 53.9                 |
 
