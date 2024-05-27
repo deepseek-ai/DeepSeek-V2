@@ -204,6 +204,7 @@ DeepSeek-V2 adopts innovative architectures to guarantee economical training and
 <p align="center">
   <img width="90%" src="https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/architecture.png?raw=true" />
 </p>
+
 ## 6. Chat Website
 You can chat with the DeepSeek-V2 on DeepSeek's official website: [chat.deepseek.com](https://chat.deepseek.com/sign_in)
 
