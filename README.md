@@ -321,6 +321,14 @@ generated_text = [output.outputs[0].text for output in outputs]
 print(generated_text)
 ```
 
+### Inference with LMDeploy (recommended)
+To utilize [LMDeploy](https://github.com/InternLM/lmdeploy) for model inference, please install LMDeploy >= v0.5.0. The current LMDeploy PyTorch Engine already supports the [implementation](https://github.com/InternLM/lmdeploy/pull/1621) of the MLA version for DeepSeek V2. If you want to use the pipeline API, please refer to [pipeline](https://lmdeploy.readthedocs.io/en/latest/api/pipeline.html?highlight=pipeline#pipeline).
+
+```bash
+# use LMDeploy PyTorch Engine as OpenAI compatible Server
+python3 -m lmdeploy serve api_server DeepSeek-V2 --backend pytorch
+```
+
 ### LangChain Support
 Since our API is compatible with OpenAI, you can easily use it in [langchain](https://www.langchain.com/).
 Here is an example:
