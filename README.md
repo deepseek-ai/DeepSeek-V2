@@ -293,6 +293,23 @@ Assistant: {assistant_message_1}<｜end▁of▁sentence｜>User: {user_message_2
 
 Assistant:
 ```
+### Inference with SGLang (recommended)
+
+[SGLang](https://github.com/sgl-project/sglang) currently supports MLA, FP8 (W8A8), FP8 KV Cache, CUDA Graph, and Torch Compile, offering the best performance among open source frameworks. Here are some examples of commands:
+
+```bash
+# fp16 tp8
+python3 -m sglang.launch_server --model deepseek-ai/DeepSeek-Coder-V2-Instruct --tp 8 --trust-remote-code
+
+# fp16 tp8 w/ torch compile
+python3 -m sglang.launch_server --model deepseek-ai/DeepSeek-Coder-V2-Instruct --tp 8 --trust-remote-code --enable-torch-compile
+
+# fp16 tp8 w/ torch compile, max torch compile batch size 1
+python3 -m sglang.launch_server --model deepseek-ai/DeepSeek-Coder-V2-Instruct --tp 8 --trust-remote-code --enable-torch-compile --max-torch-compile-bs 1
+
+# fp8 tp8 w/ torch compile, fp8 e5m2 kv cache
+python3 -m sglang.launch_server --model neuralmagic/DeepSeek-Coder-V2-Instruct-FP8 --tp 8 --trust-remote-code --enable-torch-compile --kv-cache-dtype fp8_e5m2
+```
 
 ### Inference with vLLM (recommended)
 To utilize [vLLM](https://github.com/vllm-project/vllm) for model inference, please merge this Pull Request into your vLLM codebase: https://github.com/vllm-project/vllm/pull/4650.
