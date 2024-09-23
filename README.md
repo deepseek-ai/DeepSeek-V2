@@ -295,20 +295,37 @@ Assistant:
 ```
 ### Inference with SGLang (recommended)
 
-[SGLang](https://github.com/sgl-project/sglang) currently supports MLA, FP8 (W8A8), FP8 KV Cache, CUDA Graph, and Torch Compile, offering the best performance among open source frameworks. Here are some examples of commands:
+[SGLang](https://github.com/sgl-project/sglang) currently supports MLA optimizations, FP8 (W8A8), FP8 KV Cache, and Torch Compile, offering the best latency and throughput among open-source frameworks. Here are some example commands to launch an OpenAI API-compatible server:
 
 ```bash
-# fp16 tp8
-python3 -m sglang.launch_server --model deepseek-ai/DeepSeek-Coder-V2-Instruct --tp 8 --trust-remote-code
+# BF16, tensor parallelism = 8
+python3 -m sglang.launch_server --model deepseek-ai/DeepSeek-V2-Chat --tp 8 --trust-remote-code
 
-# fp16 tp8 w/ torch compile
-python3 -m sglang.launch_server --model deepseek-ai/DeepSeek-Coder-V2-Instruct --tp 8 --trust-remote-code --enable-torch-compile
+# BF16, w/ torch.compile (The compilation can take several minutes)
+python3 -m sglang.launch_server --model deepseek-ai/DeepSeek-V2-Lite-Chat --trust-remote-code --enable-torch-compile
 
-# fp16 tp8 w/ torch compile, max torch compile batch size 1
-python3 -m sglang.launch_server --model deepseek-ai/DeepSeek-Coder-V2-Instruct --tp 8 --trust-remote-code --enable-torch-compile --max-torch-compile-bs 1
+# FP8, tensor parallelism = 8, FP8 KV cache
+python3 -m sglang.launch_server --model deepseek-ai/DeepSeek-V2-Chat --tp 8 --trust-remote-code --quant fp8 --kv-cache-dtype fp8_e5m2
+```
 
-# fp8 tp8 w/ torch compile, fp8 e5m2 kv cache
-python3 -m sglang.launch_server --model neuralmagic/DeepSeek-Coder-V2-Instruct-FP8 --tp 8 --trust-remote-code --enable-torch-compile --kv-cache-dtype fp8_e5m2
+After launching the server, you can query it with OpenAI API
+
+```
+import openai
+client = openai.Client(
+    base_url="http://127.0.0.1:30000/v1", api_key="EMPTY")
+
+# Chat completion
+response = client.chat.completions.create(
+    model="default",
+    messages=[
+        {"role": "system", "content": "You are a helpful AI assistant"},
+        {"role": "user", "content": "List 3 countries and their capitals."},
+    ],
+    temperature=0,
+    max_tokens=64,
+)
+print(response)
 ```
 
 ### Inference with vLLM (recommended)
