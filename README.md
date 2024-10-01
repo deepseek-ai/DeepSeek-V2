@@ -40,12 +40,12 @@
 </div>
 
 <p align="center">
-  <a href="#2-model-downloads">Model Download</a> |
-  <a href="#3-evaluation-results">Evaluation Results</a> |
-  <a href="#4-model-architecture">Model Architecture</a> |
-  <a href="#6-api-platform">API Platform</a> |
-  <a href="#8-license">License</a> |
-  <a href="#9-citation">Citation</a>
+  <a href="#3-model-downloads">Model Download</a> |
+  <a href="#4-evaluation-results">Evaluation Results</a> |
+  <a href="#5-model-architecture">Model Architecture</a> |
+  <a href="#7-api-platform">API Platform</a> |
+  <a href="#9-license">License</a> |
+  <a href="#10-citation">Citation</a>
 </p>
 
 <p align="center">
