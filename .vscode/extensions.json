@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "formulahendry.docker-extension-pack",
+        "george3447.docker-run",
+        "nvidia.bluebazel",
+        "rsip-vision.nvidia-smi-plus",
+        "leonardo16.nvidia-gpu"
+    ]
+}
