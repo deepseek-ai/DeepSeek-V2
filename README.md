@@ -175,20 +175,20 @@ We evaluate our model on AlpacaEval 2.0 and MTBench, showing the competitive per
 **Alignbench** (https://arxiv.org/abs/2311.18743)
 <div align="center">
 
-| **模型** | **开源/闭源** | **总分** | **中文推理** | **中文语言** |
+| **Model** | **Open/Closed Source** | **Total Score** | **Chinese Reasoning** | **Chinese** |
 | :---: | :---: | :---: | :---: | :---: |
-| gpt-4-1106-preview | 闭源 | 8.01 | 7.73 | 8.29 |
-| DeepSeek-V2 Chat (RL) | 开源 | 7.91 | 7.45 | 8.36 |
-| erniebot-4.0-202404 (文心一言) | 闭源 | 7.89 | 7.61 | 8.17 |
-| DeepSeek-V2 Chat (SFT) | 开源 | 7.74 | 7.30 | 8.17 |
-| gpt-4-0613 | 闭源 | 7.53 | 7.47 | 7.59 |
-| erniebot-4.0-202312 (文心一言) | 闭源 | 7.36 | 6.84 | 7.88 |
-| moonshot-v1-32k-202404 (月之暗面) | 闭源 | 7.22 | 6.42 | 8.02 |
-| Qwen1.5-72B-Chat (通义千问) | 开源 | 7.19 | 6.45 | 7.93 |
-| DeepSeek-67B-Chat | 开源 | 6.43 | 5.75 | 7.11 |
-| Yi-34B-Chat (零一万物) | 开源 | 6.12 | 4.86 | 7.38 |
-| gpt-3.5-turbo-0613 | 闭源 | 6.08 | 5.35 | 6.71 |
-| DeepSeek-V2-Lite 16B Chat | 开源 | 6.01 | 4.71 | 7.32 |
+| gpt-4-1106-preview | Closed Source | 8.01 | 7.73 | 8.29 |
+| DeepSeek-V2 Chat (RL) | Open Source | 7.91 | 7.45 | 8.36 |
+| erniebot-4.0-202404 (文心一言) | Closed Source | 7.89 | 7.61 | 8.17 |
+| DeepSeek-V2 Chat (SFT) | Open Source | 7.74 | 7.30 | 8.17 |
+| gpt-4-0613 | Closed Source | 7.53 | 7.47 | 7.59 |
+| erniebot-4.0-202312 (文心一言) | Closed Source | 7.36 | 6.84 | 7.88 |
+| moonshot-v1-32k-202404 (月之暗面) | Closed Source | 7.22 | 6.42 | 8.02 |
+| Qwen1.5-72B-Chat (通义千问) | Open Source | 7.19 | 6.45 | 7.93 |
+| DeepSeek-67B-Chat | Open Source | 6.43 | 5.75 | 7.11 |
+| Yi-34B-Chat (零一万物) | Open Source | 6.12 | 4.86 | 7.38 |
+| gpt-3.5-turbo-0613 | Closed Source | 6.08 | 5.35 | 6.71 |
+| DeepSeek-V2-Lite 16B Chat | Open Source | 6.01 | 4.71 | 7.32 |
 
 </div>
 
