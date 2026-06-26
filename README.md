@@ -1,4 +1,78 @@
-<!-- markdownlint-disable first-line-h1 -->
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>MyFlix</title>
+    <style>
+        body{
+            margin:0;
+            background:#141414;
+            color:white;
+            font-family:Arial,sans-serif;
+        }
+
+        nav{
+            background:black;
+            padding:15px 30px;
+            display:flex;
+            justify-content:space-between;
+        }
+
+        .logo{
+            color:red;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        .hero{
+            height:80vh;
+            background:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba');
+            background-size:cover;
+            display:flex;
+            align-items:center;
+            padding-left:50px;
+        }
+
+        .hero h1{
+            font-size:60px;
+        }
+
+        .movies{
+            padding:20px;
+        }
+
+        .row{
+            display:flex;
+            gap:15px;
+            overflow-x:auto;
+        }
+
+        .card{
+            min-width:200px;
+            height:300px;
+            background:#333;
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">MYFLIX</div>
+    <div>Home | Movies | Series</div>
+</nav>
+
+<div class="hero">
+    <h1>Unlimited Movies & Shows</h1>
+</div>
+
+<div class="movies">
+    <h2>Popular</h2>
+    <div class="row">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    h1 -->
 <!-- markdownlint-disable html -->
 <!-- markdownlint-disable no-duplicate-header -->
 
